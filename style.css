@@ -1,0 +1,93 @@
+body{
+	font-size: 20px;
+	margin: 0;
+}	
+
+header {
+	text-align: left;
+	background-color: black ;
+	color: white;
+	text-decoration: underline;
+	font-style:italic;
+	font-family: fantasy; 
+	padding: 6px;
+
+}
+
+#banner{
+	width: 75%;
+	border: solid;
+}
+
+
+.principal {
+	background-color: grey;
+	text-align: center;
+	padding: 20px;
+	padding-bottom: 1px;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.principal p {
+	padding-left: 25px; 
+	padding-right: 25px;
+	text-align: justify;
+
+}
+
+
+h1{text-align: center; 
+	background-color: black; 
+	color: mediumpurple;
+	padding: 18px 40px;
+}
+
+
+#nossamissao {
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 20px;
+
+}  
+
+#missao{
+	font-size: 30px;
+	text-align: center;
+
+}
+
+
+
+.beneficios {
+	background-color: grey;
+	padding: 20px;
+	padding-top: 2px;
+	padding-left: 0;
+	padding-right: 0;
+
+}
+
+h2{text-align: center; 
+	background-color: black; 
+	color: mediumpurple;
+	padding: 10px 20px;
+}
+
+ul {
+	display: inline-block;
+	vertical-align: top;
+	width: 40%;
+	font-size: 30px;
+	text-align: justify;
+	font-style: italic;
+	font-weight: bold;
+
+}
+
+.imagembeneficios {
+	width: 50%;
+	border: solid;
+	margin-left: 1%;
+
+}
