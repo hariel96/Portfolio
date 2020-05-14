@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+ 
+body {
+  background-image: url("https://cdn.sandbergwallpaper.com/wp-content/uploads/2019/05/646-06_1.jpg");
+
+  background-size: auto 100vh;
+  font-size: 21px; 
+
+}
+
+header {
+  
+  background-color: mediumaquamarine;
+  border: 3px solid slateblue;
+  box-shadow: 0px 0px 12px 2px blueviolet;
+  position: fixed;
+  width: 100vw;
+}
+
+header a {
+  display: block;
+  color: blueviolet;
+  text-decoration: none;
+  font-style: italic;
+  padding: 0.2em;
+  font-family: PT MONO;
+  transition: background-color 0.5s, color 0.5s, font-size 0.5s; 
+}
+
+li a:active,
+li a:hover {
+  display: block;
+  background-color: blueviolet;
+  color: white;
+  padding: 1.2em;
+  font-size: 1.1em;
+  box-shadow: 2px 2px teal;
+  padding: 0.2em;
+}
+
+header li {
+  list-style: NONE;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4vh 0.1vh 0.4vh 0.1vh;
+  margin: 0.4vh 0.1vh 0.4vh 0.1vh;
+}
+
+.menu {
+  min-height: 38vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: running 3s animacaoTitulo;
+  z-index: 1;
+}
+
+@keyframes animacaoTitulo {
+  0% {
+    transform: scale(0.2) translateY(-50vh);
+  opacity: 0;
+
+  }
+  100%{
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+  }
+}
+
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color: #9400d3;
+  transition: text-shadow 0.4s;
+}
+
+.menu h1:active,
+.menu h1:hover {
+  color: #9400d3;
+  text-shadow: 0px 0px 15px purple;
+}
+.menu h2:active,
+.menu h2:hover {
+  color: #9400d3;
+  text-shadow: 0px 0px 15px purple;
+}
+
+.site-title {
+  font-size: 2.0em;
+  font-family: Cutive Mono;
+ 
+}
+
+.site-subtitle {
+  font-size: 1.7em;
+  font-family: Amatic SC;
+  
+}
+
+.title-portfolio{
+  font-size: 1.65em;
+  font-family: pt mono;
+  color: deeppink;
+  padding: 8vh;
+}
+
+.title-contato {
+    font-size: 1.15em;
+    font-family: pt mono;
+    color: deeppink;
+    padding: 2vh;
+}
+
+figure {
+  width: 48vh;
+  margin: 1.5vh;
+}
+
+.figuras {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      min-height: 80vh;
+}
+
+.imgPortifolio {
+  width: 43vh;
+  height: 30vh;
+  border: 0.5vh solid slateblue;
+  border-radius: 10%;
+  transition:0.3s;
+}
+
+
+figure a {
+  text-decoration: none;
+  color: blue;
+  font-family: nova mono ;
+  line-height: 1.3em;
+}
+
+figure a:active,
+figure a:hover{
+  display: block; 
+  text-decoration: underline;
+  color: #66CDAA;
+  
+}
+
+.imgPortifolio:active,
+.imgPortifolio:hover{
+  transform: rotateZ(2deg);
+  box-shadow: 0px 0px 12px 2px blueviolet;
+
+}
+ 
+.contato a {
+  font-size: 6vh;
+  color: deeppink;
+  text-align: justify;
+  padding: 1.5vh;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.contato a:active,
+.contato a:hover {
+  color: purple;
+  text-shadow: 0px 0px 15px purple;
+}
+
+@media (min-width: 600px) {
+                            body {
+                                    font-size: 23px; 
+                                 }
+                            .site-title {
+                                    font-size: 2.7em;
+                                        }
+
+                            .site-subtitle {
+                              font-size: 2em;
+                            }
+                          }
+
+@media (min-width: 900px) {
+                            body {
+                                   font-size: 24px; 
+                                  }
+                            .site-title {
+                                  font-size: 2.7em;
+                                        }
+
+                            .site-subtitle {
+                                  font-size: 2em;
+                                           }
+
+}
