@@ -1,93 +1,247 @@
 body{
 	font-size: 20px;
 	margin: 0;
+	font-family: 'Montserrat Alternates', sans-serif;
+	background-color: grey;
 }	
 
-header {
-	text-align: left;
-	background-color: black ;
-	color: white;
-	text-decoration: underline;
-	font-style:italic;
-	font-family: fantasy; 
-	padding: 6px;
+.cabecalho {
+	background-color: black;
+	color: whitesmoke;
+  	display: flex;
+  	justify-content: space-around;
 
 }
 
-#banner{
+.cabecalho a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 4vh;
+  padding-left: 1vh;
+  padding-right: 2vh;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: initial;
+}
+
+
+.cabecalho a:hover {
+	color: orange;
+	border: 0.5vh solid orange;
+}
+
+
+
+.logo {
+	height: 21vh;
+	padding-left: 8vh;
+}
+
+.cabecalho ul {
+  display: flex;
+  padding: 0.2em;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  padding-right: 8vh;
+
+}
+
+
+.banner{
 	width: 75%;
 	border: solid;
 }
 
 
+
+.banner:hover, .utensilios:hover, .imagembeneficios:hover {
+	opacity: 0.6;
+	transition: 0.3s;
+
+}
+
+
 .principal {
-	background-color: grey;
+	background: linear-gradient(grey,antiquewhite,grey);
 	text-align: center;
 	padding: 20px;
-	padding-bottom: 1px;
+	padding-bottom: 3vh;
 	padding-left: 0;
 	padding-right: 0;
 }
 
-.principal p {
-	padding-left: 25px; 
-	padding-right: 25px;
-	text-align: justify;
 
+.principal p {
+	padding-left: 12vh; 
+	padding-right: 12vh;
+	text-align: justify;
 }
 
 
 h1{text-align: center; 
 	background-color: black; 
-	color: mediumpurple;
+	color: antiquewhite;
 	padding: 18px 40px;
+	font-family: serif;
 }
 
 
 #nossamissao {
 	text-align: center;
-	margin-top: 35px;
-	margin-bottom: 20px;
+	margin-top: 2vh;
+	margin-bottom: 2vh;
+	font-weight: bolder;
+	font-size: 1.2em;
 
 }  
+
+
 
 #missao{
 	font-size: 30px;
 	text-align: center;
-
+	padding: 0;
 }
 
 
-
 .beneficios {
-	background-color: grey;
+	background: linear-gradient(antiquewhite,grey);
 	padding: 20px;
 	padding-top: 2px;
 	padding-left: 0;
 	padding-right: 0;
+	clear: left;
 
 }
 
-h2{text-align: center; 
+
+h2, h3{text-align: center; 
 	background-color: black; 
-	color: mediumpurple;
+	color: antiquewhite;
 	padding: 10px 20px;
+	font-size: 1.5em;
 }
 
-ul {
+.beneficios ul {
 	display: inline-block;
 	vertical-align: top;
 	width: 40%;
-	font-size: 30px;
 	text-align: justify;
 	font-style: italic;
 	font-weight: bold;
+	font-size: 1.5em;
+	padding-top: 6vh;
+}
 
+
+
+.beneficios li {
+	margin: 1vh 0;
+	font-family: initial;
+	font-style: none;
+	list-style: none;
+}
+
+.beneficios li:before {
+	content: "✀";
 }
 
 .imagembeneficios {
 	width: 50%;
 	border: solid;
-	margin-left: 1%;
+	margin-left: 4%;
 
 }
+
+footer {
+	text-align: center;
+	background-color: lightgoldenrodyellow;
+	border-top: solid 0.4vh;
+}
+
+footer img {
+	height: 12vh;
+}
+
+
+footer p {
+	padding-bottom: 1.3vh;
+	font-size: 2vh;
+	font-weight: bolder;
+	margin: 0;
+}
+
+.utensilios {
+	width: 27vh;
+	float: left;
+	margin-left: 12vh;
+	border: solid;
+	margin-right: 3vh;
+
+}
+
+h1:before ,h2:before,h3:before {
+	content: "[ ";
+}
+
+h1:after ,h2:after,h3:after {
+	content: " ]";
+}
+
+.mapa {
+	background: linear-gradient(grey,antiquewhite);
+	margin: 0;
+	text-align: center;
+}
+
+.mapa h3, .mapa p {
+	margin: 0;
+}
+
+.mapa p {
+	padding: 3vh 0;
+	padding-left: 12vh; 
+	padding-right: 12vh;
+	text-align: justify;
+}
+
+.googlemaps {
+	border: solid 0.7vh;
+}
+
+.video {
+	width: 80vh;
+	text-align: center;
+	margin: 1em auto;
+}
+
+@media screen and (max-width: 480px) {
+
+	 header, .cabecalho, .principal, .mapa, .video, .beneficios, footer, .googlemaps,h1,h2,h3{
+		
+		width: auto;
+
+	}
+
+	.cabecalho {
+		display: list-item;
+	}
+
+	.logo {
+		height: 15vh;
+	}
+
+	.cabecalho ul {
+	 justify-content: center;
+	 width: auto;
+
+	}
+
+	.cabecalho a {
+	  font-size: 1em;
+	}
+
+	
+}
+	
