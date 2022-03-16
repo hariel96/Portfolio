@@ -1,247 +1,208 @@
-body{
-	font-size: 20px;
-	margin: 0;
-	font-family: 'Montserrat Alternates', sans-serif;
-	background-color: grey;
-}	
-
-.cabecalho {
-	background-color: black;
-	color: whitesmoke;
-  	display: flex;
-  	justify-content: space-around;
-
-}
-
-.cabecalho a {
-  color: whitesmoke;
-  text-decoration: none;
-  font-size: 4vh;
-  padding-left: 1vh;
-  padding-right: 2vh;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-family: initial;
-}
-
-
-.cabecalho a:hover {
-	color: orange;
-	border: 0.5vh solid orange;
-}
-
-
-
-.logo {
-	height: 21vh;
-	padding-left: 8vh;
-}
-
-.cabecalho ul {
-  display: flex;
-  padding: 0.2em;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  padding-right: 8vh;
-
-}
-
-
-.banner{
-	width: 24%;
-	border: solid;
-}
-
-
-
-.banner:hover, .utensilios:hover, .imagembeneficios:hover {
-	opacity: 0.6;
-	transition: 0.3s;
-
-}
-
-
-.principal {
-	background: linear-gradient(grey,antiquewhite,grey);
-	text-align: center;
-	padding: 20px;
-	padding-bottom: 3vh;
-	padding-left: 0;
-	padding-right: 0;
-}
-
-
-.principal p {
-	padding-left: 12vh; 
-	padding-right: 12vh;
-	text-align: justify;
-}
-
-
-h1{text-align: center; 
-	background-color: black; 
-	color: antiquewhite;
-	padding: 18px 40px;
-	font-family: serif;
-}
-
-
-#nossamissao {
-	text-align: center;
-	margin-top: 2vh;
-	margin-bottom: 2vh;
-	font-weight: bolder;
-	font-size: 1.2em;
-
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: border-box;
 }  
-
-
-
-#missao{
-	font-size: 30px;
-	text-align: center;
-	padding: 0;
-}
-
-
-.beneficios {
-	background: linear-gradient(antiquewhite,grey);
-	padding: 20px;
-	padding-top: 2px;
-	padding-left: 0;
-	padding-right: 0;
-	clear: left;
+  
+body {
+  background-image: url("https://www.itl.cat/pngfile/big/134-1349218_mount-fuji-volcano-japan-4k-il-fascino-dell.jpg");
+  background-size: 200vh 315vh;
+  font-size: 21px; 
 
 }
 
-
-h2, h3{text-align: center; 
-	background-color: black; 
-	color: antiquewhite;
-	padding: 10px 20px;
-	font-size: 1.5em;
+header {
+  
+  background-color: floralwhite;
+  border: 3px solid midnightblue;
+  box-shadow: 0px 0px 12px 2px midnightblue;
+  position: fixed;
+  width: 100vw;
 }
 
-.beneficios ul {
-	display: inline-block;
-	vertical-align: top;
-	width: 40%;
-	text-align: justify;
-	font-style: italic;
-	font-weight: bold;
-	font-size: 1.5em;
-	padding-top: 6vh;
+header a {
+  display: block;
+  color: midnightblue;
+  text-decoration: none;
+  font-style: italic;
+  padding: 0.2em;
+  font-family: PT MONO;
+  transition: background-color 0.5s, color 0.5s, font-size 0.5s; 
+}
+
+li a:active,
+li a:hover {
+  display: block;
+  background-color: #9400d3;
+  color: white;
+  padding: 1.2em;
+  font-size: 1.1em;
+  box-shadow: 2px 2px teal;
+  padding: 0.2em;
+}
+
+header li {
+  list-style: none;
+}
+header ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.4vh 0.1vh 0.4vh 0.1vh;
+  margin: 0.4vh 0.1vh 0.4vh 0.1vh;
+}
+
+.menu {
+  min-height: 38vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: running 3s animacaoTitulo;
+  z-index: 1;
+}
+
+@keyframes animacaoTitulo {
+  0% {
+    transform: scale(0.2) translateY(-50vh);
+  opacity: 0;
+
+  }
+  100%{
+    transform: scale(1) translateY(0vh);
+    opacity: 1;
+  }
+}
+
+.site-subtitle,
+.site-title {
+  text-align: center;
+  color: midnightblue;
+  transition: text-shadow 0.4s;
+}
+
+.menu h1:active,
+.menu h1:hover {
+  color: #9400d3;
+  text-shadow: 0px 0px 15px purple;
+}
+.menu h2:active,
+.menu h2:hover {
+  color: #9400d3;
+  text-shadow: 0px 0px 15px purple;
+}
+
+.site-title {
+  font-size: 2.0em;
+  font-family: Cutive Mono;
+ 
+}
+
+.site-subtitle {
+  font-size: 1.7em;
+  font-family: Amatic SC;
+  
+}
+
+.title-portfolio{
+  font-size: 1.65em;
+  font-family: pt mono;
+  color: navy;
+  padding: 8vh;
+  
+}
+
+.title-contato {
+    font-size: 1.15em;
+    font-family: pt mono;
+    color: deeppink;
+    padding: 2vh;
+}
+
+figure {
+  width: 48vh;
+  margin: 1.5vh;
+}
+
+.figuras {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      min-height: 80vh;
+}
+
+.imgPortifolio {
+  width: 43vh;
+  height: 30vh;
+  border: 0.5vh solid indigo;
+  border-radius: 10%;
+  transition:0.3s;
 }
 
 
-
-.beneficios li {
-	margin: 1vh 0;
-	font-family: initial;
-	font-style: none;
-	list-style: none;
+figure a {
+  text-decoration: none;
+  color: indigo;
+  font-family: nova mono ;
+  line-height: 1.3em;
+  transition: 0.5s;
 }
 
-.beneficios li:before {
-	content: "✀";
+figure a:active,
+figure a:hover{
+  display: block; 
+  text-decoration: underline;
+  color: #66CDAA;
+  
 }
 
-.imagembeneficios {
-	width: 50%;
-	border: solid;
-	margin-left: 4%;
+.imgPortifolio:active,
+.imgPortifolio:hover{
+  transform: rotateZ(2deg);
+  box-shadow: 0px 0px 12px 2px midnightblue;
 
 }
-
-footer {
-	text-align: center;
-	background-color: lightgoldenrodyellow;
-	border-top: solid 0.4vh;
+ 
+.contato a {
+  font-size: 6vh;
+  color: deeppink;
+  text-align: justify;
+  padding: 1.5vh;
+  text-decoration: none;
+  transition: 0.5s;
 }
 
-footer img {
-	height: 12vh;
+.contato a:active,
+.contato a:hover {
+  color: purple;
+  text-shadow: 0px 0px 15px purple;
 }
 
+@media (min-width: 600px) {
+                            body {
+                                    font-size: 23px; 
+                                     background-size: 200vh 220vh;
+                                 }
+                            .site-title {
+                                    font-size: 2.7em;
+                                        }
 
-footer p {
-	padding-bottom: 1.3vh;
-	font-size: 2vh;
-	font-weight: bolder;
-	margin: 0;
+                            .site-subtitle {
+                              font-size: 2em;
+                            }
+                          }
+
+@media (min-width: 900px) {
+                            body {
+                                   font-size: 24px; 
+                                    background-size: 200vh 200vh;
+                                  }
+                            .site-title {
+                                  font-size: 2.7em;
+                                        }
+
+                            .site-subtitle {
+                                  font-size: 2em;
+                                           }
+
 }
-
-.utensilios {
-	width: 27vh;
-	float: left;
-	margin-left: 12vh;
-	border: solid;
-	margin-right: 3vh;
-
-}
-
-h1:before ,h2:before,h3:before {
-	content: "[ ";
-}
-
-h1:after ,h2:after,h3:after {
-	content: " ]";
-}
-
-.mapa {
-	background: linear-gradient(grey,antiquewhite);
-	margin: 0;
-	text-align: center;
-}
-
-.mapa h3, .mapa p {
-	margin: 0;
-}
-
-.mapa p {
-	padding: 3vh 0;
-	padding-left: 12vh; 
-	padding-right: 12vh;
-	text-align: justify;
-}
-
-.googlemaps {
-	border: solid 0.7vh;
-}
-
-.video {
-	width: 80vh;
-	text-align: center;
-	margin: 1em auto;
-}
-
-@media screen and (max-width: 480px) {
-
-	 header, .cabecalho, .principal, .mapa, .video, .beneficios, footer, .googlemaps,h1,h2,h3{
-		
-		width: auto;
-
-	}
-
-	.cabecalho {
-		display: list-item;
-	}
-
-	.logo {
-		height: 15vh;
-	}
-
-	.cabecalho ul {
-	 justify-content: center;
-	 width: auto;
-
-	}
-
-	.cabecalho a {
-	  font-size: 1em;
-	}
-
-	
-}
-	
