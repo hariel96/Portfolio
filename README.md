@@ -1,2 +1,2 @@
-# barbeariaHTML-CSS
-Site que eu criei treinando HTML/CSS
+# sitePessoal
+Site responsivo pensando no Mobile First
