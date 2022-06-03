@@ -107,7 +107,7 @@ header ul {
   font-size: 1.65em;
   font-family: pt mono;
   color: navy;
-  padding: 8vh;
+  padding-bottom: 4vh;
   
 }
 
@@ -132,8 +132,8 @@ figure {
 }
 
 .imgPortifolio {
-  width: 43vh;
-  height: 30vh;
+  width: 39vh;
+  height: 27vh;
   border: 0.5vh solid indigo;
   border-radius: 10%;
   transition:0.3s;
@@ -142,7 +142,7 @@ figure {
 
 figure a {
   text-decoration: none;
-  color: indigo;
+  color: honeydew;
   font-family: nova mono ;
   line-height: 1.3em;
   transition: 0.5s;
@@ -152,7 +152,7 @@ figure a:active,
 figure a:hover{
   display: block; 
   text-decoration: underline;
-  color: #66CDAA;
+  color: indigo;
   
 }
 
