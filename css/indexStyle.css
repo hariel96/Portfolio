@@ -142,7 +142,7 @@ figure {
 
 figure a {
   text-decoration: none;
-  color: honeydew;
+  color: currentColor;
   font-family: nova mono ;
   line-height: 1.3em;
   transition: 0.5s;
@@ -152,7 +152,7 @@ figure a:active,
 figure a:hover{
   display: block; 
   text-decoration: underline;
-  color: indigo;
+  color: darkorchid;
   
 }
 
