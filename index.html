@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Hariel P. Correia</title>
 		<link rel="stylesheet" href="css/indexStyle.css">
 		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Balsamiq+Sans:ital@1&family=Cutive+Mono&family=DM+Mono&family=Libre+Baskerville&family=Major+Mono+Display&family=Nova+Mono&family=PT+Mono&family=Pangolin&family=Playfair+Display:ital@1&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -103,49 +102,46 @@
 			.embeddedServiceHelpButton .helpButton .uiButton:focus {
 				outline: 1px solid #005290;
 			}
-		</style>
-		
+		</style> 
 		<script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 		<script type='text/javascript'>
 			var initESW = function(gslbBaseURL) {
-        embedded_svc.settings.displayHelpButton = true; //Or false
-        embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'         //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-        //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)         //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
-        //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)         // Settings for Chat
-        //embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
-            // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
-            // Returns a valid button ID.
-        //};
-        //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
-        //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
-        //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-        embedded_svc.settings.entryFeature = 'LiveAgent';         
-		embedded_svc.init(
-            'https://hospitalbp--dev.my.salesforce.com',
-            'https://dev-bp.cs219.force.com/medico',
-            gslbBaseURL,
-            '00D8G0000008hTu',
-            'Second_POC',
-            {
-                baseLiveAgentContentURL: 'https://c.la5-c1cs-ia4.salesforceliveagent.com/content',
-                deploymentId: '5728G0000004CH1',
-                buttonId: '5738G0000004CHV',
-                baseLiveAgentURL: 'https://d.la5-c1cs-ia4.salesforceliveagent.com/chat',
-                eswLiveAgentDevName: 'Second_POC',
-                isOfflineSupportEnabled: false
-            }
-        );
-    };     
-	if (!window.embedded_svc) {
-        var s = document.createElement('script');
-        s.setAttribute('src', 'https://hospitalbp--dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
-        s.onload = function() {
-            initESW(null);
-        };
-        document.body.appendChild(s);
-    } else {
-        initESW('https://service.force.com');
-    }
+				embedded_svc.settings.displayHelpButton = true; //Or false
+				embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'         //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
+				//embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)         //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
+				//embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)         // Settings for Chat
+				//embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
+					// Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
+					// Returns a valid button ID.
+				//};
+				//embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
+				//embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
+				//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+				embedded_svc.settings.entryFeature = 'LiveAgent';         embedded_svc.init(
+					'https://hospitalbp--dev.my.salesforce.com',
+					'https://dev-bp.cs219.force.com/medico',
+					gslbBaseURL,
+					'00D8G0000008hTu',
+					'Second_POC',
+					{
+						baseLiveAgentContentURL: 'https://c.la5-c1cs-ia4.salesforceliveagent.com/content',
+						deploymentId: '5728G0000004CH1',
+						buttonId: '5738G0000004CHV',
+						baseLiveAgentURL: 'https://d.la5-c1cs-ia4.salesforceliveagent.com/chat',
+						eswLiveAgentDevName: 'Second_POC',
+						isOfflineSupportEnabled: false
+					}
+				);
+			};     if (!window.embedded_svc) {
+				var s = document.createElement('script');
+				s.setAttribute('src', 'https://hospitalbp--dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+				s.onload = function() {
+					initESW(null);
+				};
+				document.body.appendChild(s);
+			} else {
+				initESW('https://service.force.com');
+			}
 		</script>
 	</body>
 </html>
