@@ -119,7 +119,8 @@
         //embedded_svc.settings.prepopulatedPrechatFields = {}; //Sets the auto-population of pre-chat form fields
         //embedded_svc.settings.fallbackRouting = []; //An array of button IDs, user IDs, or userId_buttonId
         //embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)         embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-        embedded_svc.settings.entryFeature = 'LiveAgent';         embedded_svc.init(
+        embedded_svc.settings.entryFeature = 'LiveAgent';         
+		embedded_svc.init(
             'https://hospitalbp--dev.my.salesforce.com',
             'https://dev-bp.cs219.force.com/medico',
             gslbBaseURL,
@@ -134,7 +135,8 @@
                 isOfflineSupportEnabled: false
             }
         );
-    };     if (!window.embedded_svc) {
+    };     
+	if (!window.embedded_svc) {
         var s = document.createElement('script');
         s.setAttribute('src', 'https://hospitalbp--dev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
         s.onload = function() {
