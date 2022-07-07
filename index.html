@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 		<title>Hariel P. Correia</title>
 		<link rel="stylesheet" href="css/indexStyle.css">
 		<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Balsamiq+Sans:ital@1&family=Cutive+Mono&family=DM+Mono&family=Libre+Baskerville&family=Major+Mono+Display&family=Nova+Mono&family=PT+Mono&family=Pangolin&family=Playfair+Display:ital@1&family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
@@ -126,7 +127,9 @@
 				//embedded_svc.settings.offlineSupportMinimizedText = '...'; //(Defaults to Contact Us)
 		
 				embedded_svc.settings.enabledFeatures = ['LiveAgent'];
-				embedded_svc.settings.entryFeature = 'LiveAgent';       embedded_svc.init(
+				embedded_svc.settings.entryFeature = 'LiveAgent';
+		
+				embedded_svc.init(
 					'https://hospitalbp--chatbot.sandbox.my.salesforce.com',
 					'https://hospitalbp--chatbot.sandbox.my.site.com/medico',
 					gslbBaseURL,
@@ -141,7 +144,9 @@
 						isOfflineSupportEnabled: false
 					}
 				);
-			};  if (!window.embedded_svc) {
+			};
+		
+			if (!window.embedded_svc) {
 				var s = document.createElement('script');
 				s.setAttribute('src', 'https://hospitalbp--chatbot.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 				s.onload = function() {
